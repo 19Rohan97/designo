@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-jost: "Jost", "sans-serif";
+
+  --color-peach: #e7816b;
+  --color-peach-100: #ffad9b;
+  --color-black: #1d1c1e;
+  --color-dark-grey: #333136;
+  --color-light-grey: #f1f3f5;
+
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+}
+
+@layer utilities {
+  body {
+    @apply font-jost font-normal text-base leading-[26px] tracking-normal;
+  }
+
+  h1 {
+    @apply font-jost font-medium text-[32px] md:text-5xl leading-9 md:leading-12 tracking-normal;
+  }
+
+  h2 {
+    @apply font-jost font-medium text-[28px] leading-[36px] tracking-[1.4px] md:text-[40px] md:leading-12 md:tracking-[2px];
+  }
+
+  h3 {
+    @apply font-jost font-medium text-[20px] leading-[26px] tracking-[5px];
+  }
+
+  .btn-dark {
+    @apply font-jost font-medium bg-white text-black hover:text-white hover:bg-peach-100 text-[15px] tracking-[1px] px-[26px] pt-[18px] pb-[16px] rounded-[8px] inline-block uppercase transition-all duration-300;
+  }
+
+  .btn-light {
+    @apply font-jost font-medium bg-peach text-white hover:bg-peach-100 text-[15px] tracking-[1px] px-[26px] pt-[18px] pb-[16px] rounded-[8px] inline-block uppercase transition-all duration-300;
+  }
+
+  .container {
+    @apply w-full md:max-w-[689px] lg:max-w-[1111px] mx-auto;
+  }
+
+  .navLink {
+    @apply font-jost text-sm font-normal tracking-[2px] text-[#333136] uppercase;
+  }
+
+  .footerNavLink {
+    @apply font-jost text-sm font-normal tracking-[2px] text-[#FFFFFF] uppercase;
+  }
+
+  .viewBtn {
+    @apply font-jost text-[15px] font-medium tracking-[5px] uppercase flex items-center justify-between gap-4;
+  }
+
+  .service {
+    @apply w-full py-[90px] md:py-[53px] lg:py-[107px] px-9 flex flex-col items-center justify-center gap-6 rounded-2xl bg-cover bg-center bg-no-repeat relative overflow-hidden before:content-[''] before:w-full before:h-full before:bg-[#000000] before:opacity-50 before:absolute before:top-0 before:left-0 hover:before:bg-peach hover:before:opacity-80 before:transition-all before:duration-300;
+  }
+
+  .card {
+    @apply text-center flex flex-col items-center justify-center gap-12 md:flex-row md:text-left lg:flex-col lg:text-center;
+  }
+  .card .img-container {
+    @apply w-full max-w-[202px];
+  }
+  .card h3 {
+    @apply mb-8 md:mb-4 lg:mb-8;
+  }
+
+  .socials {
+    @apply w-full flex items-center justify-center gap-4 md:justify-end;
+  }
+
+  .project {
+    @apply rounded-2xl overflow-hidden bg-[#FDF3F0] md:flex lg:block hover:bg-peach transition-all duration-300;
+  }
+  .project .imgContainer {
+    @apply md:max-w-[339px] lg:max-w-full;
+  }
+  .project .infoContainer {
+    @apply px-[30px] py-8 flex flex-col items-center justify-center gap-4 text-center;
+  }
+  .project .infoContainer h3 {
+    @apply text-peach transition-all duration-300;
+  }
+  .project .infoContainer p {
+    @apply transition-all duration-300;
+  }
+  .project:hover .infoContainer p {
+    @apply text-white;
+  }
+  .project:hover .infoContainer h3 {
+    @apply text-white;
+  }
+
+  .form-group {
+    @apply mb-2 relative;
+  }
+  .form-control {
+    @apply px-3.5 py-3 border-b border-b-white w-full placeholder:text-[rgba(255,255,255,0.50)] outline-0 text-white focus-visible:border-b-[3px] resize-none;
+  }
+  .form-submit {
+    @apply mt-9 px-12 mx-auto block md:ms-auto md:me-0 md:mt-4 cursor-pointer;
+  }
+  .error {
+    @apply absolute text-white text-[12px] italic right-2 top-1/2 -translate-y-1/2 flex items-center gap-2;
+  }
+}

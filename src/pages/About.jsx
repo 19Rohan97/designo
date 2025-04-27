@@ -19,7 +19,7 @@ function About() {
             <img
               src="/assets/about/mobile/image-about-hero.jpg"
               alt="About Us"
-              className="block md:hidden"
+              className="block md:hidden  w-full"
             />
             <img
               src="/assets/about/tablet/image-about-hero.jpg"
@@ -41,7 +41,7 @@ function About() {
             <img
               src="/assets/about/mobile/image-world-class-talent.jpg"
               alt="About Us"
-              className="block md:hidden"
+              className="block md:hidden  w-full"
             />
             <img
               src="/assets/about/tablet/image-world-class-talent.jpg"
@@ -159,7 +159,7 @@ function About() {
             <img
               src="/assets/about/mobile/image-real-deal.jpg"
               alt="About Us"
-              className="block md:hidden"
+              className="block md:hidden  w-full"
             />
             <img
               src="/assets/about/tablet/image-real-deal.jpg"

@@ -4,7 +4,7 @@ function Home() {
   return (
     <main>
       <section className="bg-peach text-white container px-6 pt-20 md:pt-[60px] md:px-14 lg:px-24 lg:pt-[139px] md:rounded-2xl bg-[url(/assets/home/desktop/bg-pattern-hero-home.svg)] bg-left md:bg-right bg-no-repeat bg-auto lg:flex relative overflow-hidden">
-        <div className="w-full max-w-[540px] mx-auto lg:mx-0 relative z-[1] text-center lg:text-left">
+        <div className="w-full max-w-[540px] mx-auto lg:mx-0 relative z-[1] text-center lg:text-left lg:pt-[139px]">
           <h1>Award-winning custom designs and digital branding solutions</h1>
           <p className="mt-3.5 mb-6 lg:mt-9 lg:mb-10">
             With over 10 years in the industry, we are experienced in creating

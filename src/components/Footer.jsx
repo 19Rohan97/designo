@@ -38,7 +38,7 @@ function Footer() {
 
           <hr className="border-white opacity-10 my-8 w-full md:hidden" />
 
-          <nav>
+          <nav aria-label="Footer navigation">
             <ul className="flex flex-col items-center gap-8 md:flex-row">
               <li>
                 <Link to={"/about"} className="footerNavLink">

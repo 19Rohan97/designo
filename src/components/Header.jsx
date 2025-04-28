@@ -11,7 +11,7 @@ function Header() {
           <img src="/assets/shared/mobile/icon-hamburger.svg" alt="Hamburger" />
         </div>
 
-        <nav className="hidden md:block">
+        <nav aria-label="Header navigation" className="hidden md:block">
           <ul className="flex items-center gap-10">
             <li>
               <Link to={"/about"} className="navLink">
